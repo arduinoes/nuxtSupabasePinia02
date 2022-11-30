@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/supabase": "^0.3.0",
+    "@types/bootstrap": "^5.2.6",
+    "nuxt": "3.0.0-rc.14"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.5",
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.2",
+    "pinia": "^2.0.25",
+    "sass": "^1.54.8",
+    "sass-loader": "^13.2.0"
+  }
+}
