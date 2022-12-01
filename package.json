@@ -8,11 +8,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxtjs/supabase": "^0.3.0",
     "@types/bootstrap": "^5.2.6",
     "nuxt": "3.0.0-rc.14"
   },
   "dependencies": {
+    "@nuxtjs/supabase": "^0.3.0",
     "@pinia/nuxt": "^0.4.5",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.2",
