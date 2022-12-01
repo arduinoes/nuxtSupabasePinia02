@@ -4,14 +4,5 @@ export default defineNuxtConfig({
   modules: [
     '@pinia/nuxt',
     '@nuxtjs/supabase'
-  ],
-  runtimeConfig: {
-    public: {
-      supabase: {
-        supabaseUrl: process.env.SUPABASE_URL,
-        supabaseKey: process.env.SUPABASE_KEY
-      }
-    }
-  }
-
+  ]
 })
