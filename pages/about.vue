@@ -3,19 +3,19 @@
 const client = useSupabaseClient()
 
 const datos = reactive({
-  obras: []
+  superheroes: []
 })
 
-async function obtenerObras() {
+async function obtenerSuperheroes() {
   try {
     const { data, error } = await client
       .from("superheroes")
       .select("nombre, imagen")
       .order("id");
-    datos.obras = data;
+    datos.superheroes = data;
     //this.datos.obras = datos;
-    console.log("About: ", data)
-    console.log("About2: ", datos.obras)
+    console.log("Data: ", data)
+    console.log("Datos Superheroes: ", datos.superheroes)
 
   } catch (err) {
     console.error("Error retrieving data from db", err);
@@ -23,7 +23,7 @@ async function obtenerObras() {
 }
 
 onMounted(() => {
-  obtenerObras();
+  obtenerSuperheroes();
 })
 
 </script>
@@ -33,9 +33,9 @@ onMounted(() => {
     <div class="row justify-content-center">
       <BaseCard
         class="col-4 m-2"
-        v-for="obra in datos.obras"
-        :key="obra.id"
-        :obra="obra"
+        v-for="superheroe in datos.superheroes"
+        :key="superheroe.id"
+        :superheroe="superheroe"
       />
   </div>
 </template>
